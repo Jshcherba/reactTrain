@@ -1,4 +1,10 @@
-ReactDOM.render(
-    React.createElement('h1', null, 'Hello world!'),
-    document.getElementById('main')
-);
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+class Greetings extends React.Component {
+    render() {
+        return <h1>Hello World</h1>
+    }
+}
+
+ReactDOM.render(<Greetings/>, document.getElementById('main'));
